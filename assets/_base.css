@@ -1,0 +1,49 @@
+/* Shared UI kit base — imports tokens + sets up viewport */
+@import url('./colors_and_type.css');
+html, body { margin: 0; }
+body { background: var(--surface); color: var(--fg-2); font-family: var(--font-serif); font-size: 18px; line-height: 30px; }
+
+/* ---- Shared primitives used across every kit ---- */
+.dr-btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; font-family: var(--font-sans); font-weight: 600; font-size: 15px; line-height: 1; padding: 16px 32px; border-radius: 999px; border: 1.5px solid transparent; cursor: pointer; transition: all 240ms var(--ease-standard); text-decoration: none; white-space: nowrap; }
+.dr-btn-primary { background: var(--accent); color: #fff; }
+.dr-btn-primary:hover { background: var(--accent-strong); }
+.dr-btn-primary:active { transform: scale(0.98); }
+.dr-btn-secondary { background: transparent; color: var(--fg-1); border-color: var(--fg-1); }
+.dr-btn-secondary:hover { border-width: 2.5px; padding: 14.5px 30.5px; }
+.dr-btn-inverse { background: #fff; color: var(--fg-1); }
+.dr-btn-ghost { background: transparent; color: var(--fg-1); padding: 16px 4px; border-radius: 0; border-bottom: 1.5px solid var(--fg-1); }
+
+.dr-input { font-family: var(--font-sans); font-size: 15px; color: var(--fg-1); padding: 16px 26px; border: 1.5px solid var(--border-strong); border-radius: 999px; background: #fff; outline: none; width: 100%; box-sizing: border-box; transition: all 180ms var(--ease-standard); }
+.dr-input:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(234,114,95,0.15); }
+.dr-input::placeholder { color: var(--fg-5); }
+
+.dr-eyebrow { font-family: var(--font-sans); font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.2em; color: var(--accent); }
+.dr-rule { display: block; width: 48px; height: 4px; background: var(--accent); border-radius: 2px; }
+
+/* Container */
+.dr-container { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
+.dr-measure { max-width: 820px; }
+
+/* Section rhythm */
+.dr-section { padding: 96px 0; }
+.dr-section-sm { padding: 64px 0; }
+.dr-section--paper { background: var(--surface-alt); }
+.dr-section--dark { background: var(--surface-inverse); color: #fff; }
+.dr-section--dark h1, .dr-section--dark h2, .dr-section--dark h3 { color: #fff; }
+
+/* Shared nav */
+.dr-nav { display: flex; align-items: center; justify-content: space-between; padding: 22px 40px; border-bottom: 1px solid var(--border); background: var(--surface); }
+.dr-nav-mark { font-family: var(--font-sans); font-weight: 600; font-size: 18px; color: var(--fg-1); letter-spacing: -0.005em; text-decoration: none; }
+.dr-nav-mark em { font-style: normal; color: var(--accent); }
+.dr-nav-links { display: flex; gap: 28px; }
+.dr-nav-links a { font-family: var(--font-sans); font-size: 14px; color: var(--fg-2); text-decoration: none; font-weight: 500; transition: color 180ms var(--ease-standard); cursor: pointer; white-space: nowrap; }
+.dr-nav-links a:hover { color: var(--accent); }
+.dr-nav-links a.active { color: var(--accent); }
+
+/* Footer */
+.dr-footer { background: var(--surface-inverse); color: rgba(255,255,255,.7); padding: 56px 40px 32px; font-family: var(--font-sans); }
+.dr-footer-grid { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; padding-bottom: 40px; border-bottom: 1px solid rgba(255,255,255,0.1); }
+.dr-footer h5 { font-family: var(--font-sans); font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(255,255,255,.5); margin-bottom: 16px; font-weight: 600; }
+.dr-footer a { display: block; color: rgba(255,255,255,.8); text-decoration: none; padding: 6px 0; font-size: 14px; }
+.dr-footer a:hover { color: var(--accent); }
+.dr-footer-bottom { max-width: 1200px; margin: 24px auto 0; display: flex; justify-content: space-between; font-size: 12px; color: rgba(255,255,255,.4); }
