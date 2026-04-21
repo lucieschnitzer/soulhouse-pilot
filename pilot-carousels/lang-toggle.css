@@ -1,0 +1,33 @@
+.lang-pill {
+  position: fixed;
+  top: 18px;
+  right: 20px;
+  z-index: 50;
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  padding: 4px;
+  background: #F4F1EB;
+  border: 1px solid #E0DACD;
+  border-radius: 999px;
+  font-family: 'Manrope', system-ui, sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+}
+.lang-seg {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: #6b6b6b;
+  padding: 8px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+  line-height: 1;
+  transition: background 120ms ease, color 120ms ease;
+}
+.lang-seg:hover { color: #1b1b1b; }
+.lang-seg.is-active {
+  background: #1b1b1b;
+  color: #fff;
+}

@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Soulhouse × DRM — Training Carousels</title>
+  <link rel="stylesheet" href="colors_and_type.css" />
+  <style>
+    :root { --bar-h: 88px; --paper: #F7F4EC; --ink: #1f1d1a; --muted: #7a7366; --line: #E8E4DA; }
+    html, body { margin: 0; height: 100%; background: var(--paper); color: var(--ink);
+      font-family: var(--font-serif, 'Cormorant Garamond', Georgia, serif); }
+    .topbar {
+      position: fixed; inset: 0 0 auto 0; height: var(--bar-h);
+      display: grid; grid-template-columns: 1fr auto; align-items: center;
+      padding: 14px 28px; gap: 16px;
+      background: var(--paper);
+      border-bottom: 1px solid var(--line);
+      z-index: 10;
+    }
+    .brand { font-size: 18px; line-height: 1.25; }
+    .brand em { font-style: italic; }
+    .brand .x { opacity: 0.45; margin: 0 8px; font-style: normal; }
+    .kicker {
+      font-family: var(--font-sans, system-ui, sans-serif);
+      font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--muted); margin-top: 4px;
+    }
+    .toggle { display: inline-flex; gap: 6px; }
+    .toggle button {
+      width: 36px; height: 36px; border-radius: 50%;
+      border: 1px solid var(--ink); background: transparent;
+      font: 600 12px/1 var(--font-sans, system-ui, sans-serif); letter-spacing: 0.1em;
+      cursor: pointer; color: var(--ink);
+      transition: background 120ms ease, color 120ms ease;
+    }
+    .toggle button[aria-pressed="true"] { background: var(--ink); color: #fff; }
+    .toggle button:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
+    .frame {
+      position: fixed; inset: var(--bar-h) 0 0 0;
+      width: 100%; height: calc(100% - var(--bar-h));
+      border: 0; background: var(--paper);
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <div class="brand"><em>Soulhouse</em> <span class="x">×</span> The Default Resilient Method</div>
+      <div class="kicker">Pilot landing page — 50 assessments, 2 weeks, Hamburg + Berlin</div>
+    </div>
+    <div class="toggle" role="group" aria-label="Language">
+      <button data-lang="en" aria-pressed="true">EN</button>
+      <button data-lang="de" aria-pressed="false">DE</button>
+    </div>
+  </header>
+
+  <iframe id="frame" class="frame" src="en.html" title="Training Carousels"></iframe>
+
+  <script>
+    const frame = document.getElementById('frame');
+    const buttons = document.querySelectorAll('.toggle button');
+    const initial = new URLSearchParams(location.search).get('lang')
+      || localStorage.getItem('drm_lang') || 'en';
+    setLang(initial, false);
+
+    buttons.forEach(b => b.addEventListener('click', () => setLang(b.dataset.lang, true)));
+
+    function setLang(lang, persist) {
+      if (lang !== 'en' && lang !== 'de') lang = 'en';
+      frame.src = lang + '.html';
+      buttons.forEach(b => b.setAttribute('aria-pressed', b.dataset.lang === lang ? 'true' : 'false'));
+      document.documentElement.lang = lang;
+      if (persist) {
+        localStorage.setItem('drm_lang', lang);
+        const u = new URL(location.href);
+        u.searchParams.set('lang', lang);
+        history.replaceState(null, '', u);
+      }
+    }
+  </script>
+</body>
+</html>
