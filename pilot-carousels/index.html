@@ -35,8 +35,14 @@
     window.setLang = setLang;
   </script>
 
-  <script type="text/babel" data-presets="react" src="./carousels.jsx"></script>
-  <script type="text/babel" data-presets="react" src="./carousels_de.jsx"></script>
+  <script>
+    // Inject ONLY the matching JSX file (loading both causes a top-level
+    // `const App` redeclaration SyntaxError and blanks one of the languages).
+    (function () {
+      const src = window.__LANG === 'de' ? './carousels_de.jsx' : './carousels.jsx';
+      document.write('<script type="text/babel" data-presets="react" src="' + src + '"><\/script>');
+    })();
+  </script>
 
   <script>
     (function () {
