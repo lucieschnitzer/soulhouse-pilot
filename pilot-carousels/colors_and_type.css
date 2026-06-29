@@ -7,17 +7,17 @@
    ============================================================ */
 
 /* --- Fonts from Google Fonts (matches brand spec) ------------ */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&family=Manrope:wght@200;300;400;500;600;700;800&family=Montserrat:wght@400;500;600;700&display=swap');
 
 :root {
   /* ---------- Colour: Primary (coral) scale ---------- */
-  --primary-10: #FDF1EF;   /* softest tint, section bg */
-  --primary-20: #FBE3DF;
-  --primary-30: #F7C7BF;
-  --primary-40: #F5B8AF;
-  --primary-60: #EE8E7F;
-  --primary-80: #EA725F;   /* MAIN — use for CTAs, accents, section labels */
-  --primary-100: #F75C43;  /* deepest coral, active / pressed */
+  --primary-10: #FAF9F5;   /* softest tint, section bg */
+  --primary-20: #EDE8DF;
+  --primary-30: #E2DBCF;
+  --primary-40: #D8CFBE;
+  --primary-60: #A98C6A;
+  --primary-80: #816040;   /* MAIN — use for CTAs, accents, section labels */
+  --primary-100: #6B4E33;  /* deepest coral, active / pressed */
 
   /* ---------- Colour: Text / Neutrals (warm grey) ---------- */
   --text-5:   #E9E9E9;    /* borders in dark surfaces */
@@ -58,7 +58,7 @@
   /* ---------- Type: families ---------- */
   --font-display: 'Playfair Display', 'Times New Roman', Georgia, serif;
   --font-serif:   'Playfair Display', 'Times New Roman', Georgia, serif;
-  --font-sans:    'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-sans:    'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 
   /* ---------- Type: scale (desktop defaults) ----------
      Spec lives in Typography_Lucie_S.png.

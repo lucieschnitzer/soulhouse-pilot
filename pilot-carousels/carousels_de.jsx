@@ -54,14 +54,14 @@ const PhaseArc = () => (
   <div className="phase-arc">
     <svg viewBox="0 0 280 110" fill="none">
       {/* curve */}
-      <path d="M 10 85 Q 60 10, 140 40 Q 200 62, 230 90" stroke="#EA725F" strokeWidth="1.25" strokeLinecap="round" fill="none"/>
+      <path d="M 10 85 Q 60 10, 140 40 Q 200 62, 230 90" stroke="#816040" strokeWidth="1.25" strokeLinecap="round" fill="none"/>
       {/* broken segment to final node */}
       <path d="M 234 92 L 246 95" stroke="#D3D3D3" strokeWidth="1.25" strokeLinecap="round" strokeDasharray="2 3"/>
       {/* nodes */}
-      <circle cx="10" cy="85" r="3" fill="#EA725F"/>
-      <circle cx="75" cy="32" r="4" fill="#EA725F"/>
-      <circle cx="140" cy="22" r="5.5" fill="#F75C43"/>
-      <circle cx="200" cy="58" r="4" fill="#EA725F"/>
+      <circle cx="10" cy="85" r="3" fill="#816040"/>
+      <circle cx="75" cy="32" r="4" fill="#816040"/>
+      <circle cx="140" cy="22" r="5.5" fill="#6B4E33"/>
+      <circle cx="200" cy="58" r="4" fill="#816040"/>
       <circle cx="260" cy="98" r="3" fill="#D3D3D3"/>
       {/* labels */}
       <g fontFamily="Manrope" fontWeight="700" fontSize="6.2" letterSpacing="1.4" fill="#515151" textAnchor="middle">
@@ -154,20 +154,20 @@ const RecoveryArc = () => (
   <div className="phase-arc">
     <svg viewBox="0 0 280 120" fill="none">
       <line x1="10" y1="85" x2="270" y2="85" stroke="#E8E6E3" strokeWidth="1" strokeDasharray="3 3"/>
-      <path d="M 15 85 Q 55 85, 75 45 Q 110 18, 155 30 Q 195 50, 220 62 Q 240 70, 250 55" stroke="#EA725F" strokeWidth="1.25" strokeLinecap="round" fill="none"/>
+      <path d="M 15 85 Q 55 85, 75 45 Q 110 18, 155 30 Q 195 50, 220 62 Q 240 70, 250 55" stroke="#816040" strokeWidth="1.25" strokeLinecap="round" fill="none"/>
       <line x1="250" y1="55" x2="250" y2="85" stroke="#A8A8A8" strokeWidth="1" strokeDasharray="2 3" strokeLinecap="round"/>
       <circle cx="15" cy="85" r="3" fill="#A8A8A8"/>
-      <circle cx="75" cy="45" r="3.5" fill="#EA725F"/>
-      <circle cx="140" cy="26" r="5" fill="#F75C43"/>
-      <circle cx="220" cy="62" r="3.5" fill="#EA725F"/>
-      <circle cx="250" cy="55" r="4" fill="#F75C43" stroke="#fff" strokeWidth="1"/>
+      <circle cx="75" cy="45" r="3.5" fill="#816040"/>
+      <circle cx="140" cy="26" r="5" fill="#6B4E33"/>
+      <circle cx="220" cy="62" r="3.5" fill="#816040"/>
+      <circle cx="250" cy="55" r="4" fill="#6B4E33" stroke="#fff" strokeWidth="1"/>
       <g fontFamily="Manrope" fontWeight="700" fontSize="5.8" letterSpacing="1.2" fill="#515151" textAnchor="middle">
         <text x="15" y="103">RUHE</text>
         <text x="75" y="33">STRESSOR TRIFFT</text>
         <text x="140" y="14">STRESSOR DAUERT AN</text>
         <text x="220" y="75">STRESSOR ENDET</text>
-        <text x="238" y="43" fill="#F75C43">VOLLE ERHOLUNG</text>
-        <text x="238" y="49" fill="#F75C43">(NIE ERREICHT)</text>
+        <text x="238" y="43" fill="#6B4E33">VOLLE ERHOLUNG</text>
+        <text x="238" y="49" fill="#6B4E33">(NIE ERREICHT)</text>
       </g>
     </svg>
   </div>
@@ -186,7 +186,7 @@ const StairWaves = () => (
           const y = yBase + Math.sin((x - 10) / 18) * amp;
           d += ` L ${x} ${y.toFixed(1)}`;
         }
-        return <path key={i} d={d} stroke="#EA725F" strokeWidth="1.2" strokeLinecap="round" fill="none" opacity={op}/>;
+        return <path key={i} d={d} stroke="#816040" strokeWidth="1.2" strokeLinecap="round" fill="none" opacity={op}/>;
       })}
       <path d="M 254 18 L 258 116" stroke="#A8A8A8" strokeWidth="0.8" strokeDasharray="2 3"/>
       <path d="M 254 116 L 258 120 L 262 116" stroke="#A8A8A8" strokeWidth="0.8" fill="none"/>
@@ -283,8 +283,8 @@ const NSBranches = ({ labels }) => {
           <div className="ns-col-sub">{L.autonomicSub}</div>
           <div className="ns-tapin">
             <svg viewBox="0 0 40 22" fill="none" aria-hidden="true">
-              <path d="M20 2 L20 18" stroke="#EA725F" strokeWidth="1.25" strokeDasharray="2 3"/>
-              <circle cx="20" cy="2" r="2.5" fill="#EA725F"/>
+              <path d="M20 2 L20 18" stroke="#816040" strokeWidth="1.25" strokeDasharray="2 3"/>
+              <circle cx="20" cy="2" r="2.5" fill="#816040"/>
             </svg>
             <div className="ns-tapin-label">{L.assessmentLabel}</div>
           </div>
@@ -306,7 +306,7 @@ const DRIRing = ({ value = 64, size = 'lg' }) => {
     <div className={`dri ${size === 'sm' ? 'dri--sm' : ''}`}>
       <svg viewBox="0 0 140 140">
         <circle cx="70" cy="70" r={r} stroke="#E8E6E3" strokeWidth="6" fill="none"/>
-        <circle cx="70" cy="70" r={r} stroke="#EA725F" strokeWidth="6" fill="none"
+        <circle cx="70" cy="70" r={r} stroke="#816040" strokeWidth="6" fill="none"
                 strokeLinecap="round"
                 strokeDasharray={`${c*pct} ${c}`}/>
       </svg>
@@ -346,11 +346,11 @@ const GermanyMap = () => (
                Q 45 100, 28 85 Z"
             fill="#EDEAE2" stroke="#CFC8BB" strokeWidth="1"/>
       {/* dots */}
-      <line x1="90" y1="55" x2="205" y2="70" stroke="#EA725F" strokeWidth="1.2" strokeLinecap="round" strokeDasharray="3 3"/>
-      <circle cx="90" cy="55" r="5" fill="#EA725F"/>
-      <circle cx="205" cy="70" r="5" fill="#EA725F"/>
-      <circle cx="90" cy="55" r="10" fill="none" stroke="#EA725F" strokeWidth="0.8" opacity="0.45"/>
-      <circle cx="205" cy="70" r="10" fill="none" stroke="#EA725F" strokeWidth="0.8" opacity="0.45"/>
+      <line x1="90" y1="55" x2="205" y2="70" stroke="#816040" strokeWidth="1.2" strokeLinecap="round" strokeDasharray="3 3"/>
+      <circle cx="90" cy="55" r="5" fill="#816040"/>
+      <circle cx="205" cy="70" r="5" fill="#816040"/>
+      <circle cx="90" cy="55" r="10" fill="none" stroke="#816040" strokeWidth="0.8" opacity="0.45"/>
+      <circle cx="205" cy="70" r="10" fill="none" stroke="#816040" strokeWidth="0.8" opacity="0.45"/>
       <g fontFamily="Manrope" fontWeight="700" fontSize="8" letterSpacing="1.6" fill="#252525">
         <text x="90" y="45" textAnchor="middle">HAMBURG</text>
         <text x="205" y="60" textAnchor="middle">BERLIN</text>
@@ -384,7 +384,7 @@ const FiveSystemRow = () => {
       {items.map(x => (
         <div className="sysi" key={x.k}>
           <SysIcon kind={x.k}/>
-          <svg className="wave" viewBox="0 0 30 10" fill="none" stroke="#EA725F" strokeWidth="1">
+          <svg className="wave" viewBox="0 0 30 10" fill="none" stroke="#816040" strokeWidth="1">
             <path d="M0 5 L4 5 L6 2 L10 8 L14 3 L18 7 L22 5 L30 5" strokeLinecap="round"/>
           </svg>
           <div className="lbl">{x.l}</div>
@@ -397,7 +397,7 @@ const FiveSystemRow = () => {
 // connecting lines from icons to ring (for 4.5)
 const SystemConnectToRing = () => (
   <svg viewBox="0 0 280 30" style={{width:'100%', height: 24, display:'block'}} fill="none">
-    <g stroke="#EA725F" strokeWidth="0.9" strokeLinecap="round" opacity="0.7">
+    <g stroke="#816040" strokeWidth="0.9" strokeLinecap="round" opacity="0.7">
       <path d="M28 0 Q 28 15, 140 28"/>
       <path d="M84 0 Q 84 15, 140 28"/>
       <path d="M140 0 L 140 28"/>
@@ -549,7 +549,7 @@ const Carousel1 = () => {
             <MeterRow
               heights={[38, 96, 42, 60]}
               labels={['Bremse','Gaspedal','Körperspannung','Denkendes Hirn']}
-              colors={['muted','#EA725F','muted','muted']}
+              colors={['muted','#816040','muted','muted']}
             />
           </div>
           <div className="label-line center-text italic">Dein System steht unter Strom</div>
