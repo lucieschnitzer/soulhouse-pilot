@@ -781,8 +781,8 @@
   align-items: center;
 }
 .sh-layer-box--target {
-  background: #FDF1EF;
-  border-color: var(--primary-40, #F5B5A5);
+  background: #EDE8DF;
+  border-color: var(--primary-40, #D8CFBE);
 }
 .sh-layer-kicker {
   font-family: var(--font-sans);

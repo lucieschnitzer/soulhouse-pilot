@@ -1,0 +1,65 @@
+/* ============================================================================
+   Soulhouse Design System override (2026)
+   Loaded LAST so it wins over colors_and_type.css / sh.css / sh-additions.css.
+   Warm brown + cream palette, editorial serif + Montserrat uppercase, pills.
+   ============================================================================ */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap');
+
+:root {
+  /* warm neutral + brown ramp (replaces the coral primary ramp) */
+  --primary-10: #FAF9F5; --primary-20: #EDE8DF; --primary-30: #E2DBCF; --primary-40: #D8CFBE;
+  --primary-60: #A98C6A; --primary-80: #816040; --primary-100: #6B4E33;
+
+  /* accents */
+  --accent: #816040; --accent-strong: #6B4E33; --accent-soft: #EDE8DF;
+
+  /* text */
+  --text-60: #666666; --text-80: #444444; --text-100: #100F0F;
+  --fg-1: #100F0F; --fg-2: #444444; --fg-3: #666666;
+
+  /* surfaces */
+  --bg-white: #FFFFFF; --bg-paper: #FAF9F5; --bg-dark: #100F0F;
+  --surface: #FFFFFF; --surface-alt: #FAF9F5; --surface-inverse: #100F0F;
+
+  /* borders */
+  --border: #E2DBCF; --border-strong: #D8CFBE;
+
+  /* type */
+  --font-display: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --font-serif:   'Playfair Display', Georgia, 'Times New Roman', serif;
+  --font-sans:    'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* Pill buttons, uppercase geometric sans */
+.dr-btn {
+  border-radius: 100px !important;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+}
+.dr-btn-primary { background: #816040; color: #fff; border-color: #816040; }
+.dr-btn-primary:hover { background: #6B4E33; }
+.dr-btn-secondary { color: #100F0F; border-color: #816040; }
+
+/* Wide-tracked uppercase labels (already sans in markup) */
+.dr-section-label, .sh-anchor, .sh-cred, .sh-framing-strip, .sh-locstrip,
+.sh-dualcta-tag, .rv-legend, .rv-frame-label { letter-spacing: 0.12em; }
+
+/* Softer card radii (cream system uses 8-12px, not square) */
+.sh-wyg-card, .sh-panel, .sh-dristrip, .sh-quadrant-frame, .sh-layer-box,
+.sh-insight, .sh-faq-item, .sh-dualcta-col { border-radius: 12px; }
+.sh-tag, .chip, .sh-dristrip-chip { border-radius: 100px; }
+
+/* Data-viz semantic colors mapped onto the Soulhouse accents */
+.sh-tag--good, .sh-relax-val--good { color: #58644C; }
+.sh-relax-bar-fill.good { background: #58644C; }
+.sh-tag--good { background: rgba(88,100,76,0.12); }
+.sh-tag--warn, .sh-relax-val--warn { color: #9C5239; }
+.sh-relax-bar-fill.warn { background: #9C5239; }
+.sh-tag--warn { background: rgba(156,82,57,0.12); }
+.sh-tag--primary { color: #6B4E33; background: rgba(129,96,64,0.14); }
+.sh-tag--neutral { color: #666666; background: rgba(129,96,64,0.07); }
+
+/* Dark surfaces -> espresso */
+.sh-close, .sh-foot, .final, .surface-inverse { background: #100F0F; }
