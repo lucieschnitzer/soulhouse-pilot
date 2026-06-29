@@ -261,7 +261,7 @@ const NSBranches = ({ labels }) => {
     autonomicEyebrow: 'Eigentliches Ziel · was den Zustand verändert',
     autonomic: 'Autonom',
     autonomicSub: 'Bremse · Gas · Herz · Atem',
-    assessmentLabel: 'Assessment liest hier',
+    assessmentLabel: 'Gemessen: Anfang und Ende',
     together: 'Gleiches Ziel. Messung macht den Weg schärfer.',
   };
   return (
@@ -426,7 +426,7 @@ const Carousel0 = () => {
             </h2>
             <CoralRule style={{marginTop:8}}/>
           </div>
-          <div className="label-line" style={{textAlign:'center'}}>Hamburg + Berlin &nbsp;·&nbsp; Mai – Juni 2026</div>
+          <div className="label-line" style={{textAlign:'center'}}>Hamburg &nbsp;·&nbsp; September – Dezember 2026</div>
         </div>
       </SlideShell>
 
@@ -437,7 +437,7 @@ const Carousel0 = () => {
           <div style={{padding:'14px 22px 22px', display:'flex', flexDirection:'column', gap:8}}>
             <div className="eyebrow">Warum diese Partnerschaft</div>
             <h3 className="display display-md" style={{fontStyle:'italic'}}>
-              Soulhouse hat den Raum für Nervensystem-Arbeit gebaut. Die Default Resilient Methode bringt die Messebene hinzu.
+              Soulhouse hat den Raum für Nervensystem-Arbeit gebaut. Die Default Resilient Method bringt das aktive HRV-Atemtraining und die Messung hinzu.
             </h3>
           </div>
         </div>
@@ -449,13 +449,13 @@ const Carousel0 = () => {
           <div className="eyebrow">Der Pilot</div>
           <div className="flex-center" style={{flex:1, justifyContent:'center'}}>
             <h2 className="display display-xl center-text" style={{lineHeight:1.05}}>
-              <span className="italic">Fünfzig</span> Assessments.<br/>
-              <span className="italic">Zwei</span> Städte.<br/>
-              <span className="italic">Zwei</span> Wochen.
+              <span className="italic">Vierzig</span> Plätze.<br/>
+              <span className="italic">Neun</span> Wochen.<br/>
+              Ein <span className="italic">Programm.</span>
             </h2>
             <CoralRule style={{marginTop:10}}/>
-            <div className="sub center-text" style={{maxWidth:220, fontStyle:'italic'}}>
-              Neunzig Minuten pro Assessment. Ein Score. Ein benanntes Muster. Eine Karte.
+            <div className="sub center-text" style={{maxWidth:240, fontStyle:'italic'}}>
+              Soulhouse-Treatments und HRV-Atemtraining, zusammen. Gemessen am Anfang und am Ende.
             </div>
           </div>
           <div/>
@@ -485,15 +485,15 @@ const Carousel0 = () => {
           <Lockup onDark/>
           <div className="flex-center" style={{flex:1, justifyContent:'center'}}>
             <h2 className="display display-lg center-text" style={{maxWidth:240}}>
-              Zu Gast bei <span className="italic">Soulhouse</span><br/>Hamburg und Berlin.
+              Zu Gast bei <span className="italic">Soulhouse</span><br/>Hamburg.
             </h2>
             <CoralRule style={{marginTop:6}}/>
             <div className="label-line" style={{color:'rgba(255,255,255,0.55)', textAlign:'center', maxWidth:220}}>
-              Folge uns und sieh den Piloten live · Bewerben unten
+              Folge uns und sieh den Piloten live · Anmeldung unten
             </div>
           </div>
           <div style={{display:'flex', justifyContent:'center'}}>
-            <button className="cta-chip cta-chip--filled">Link in Bio antippen. Bewerben.</button>
+            <button className="cta-chip cta-chip--filled">Link in Bio antippen. Platz sichern.</button>
           </div>
         </div>
       </SlideShell>
@@ -595,14 +595,14 @@ const Carousel1 = () => {
           <div className="flex-center" style={{flex:1, justifyContent:'center'}}>
             <DRIRingEmpty/>
             <h2 className="display display-lg center-text" style={{marginTop:14}}>
-              Erst <span className="italic" style={{color:'var(--primary-40)'}}>messen.</span><br/>
-              Dann trainieren.
+              <span className="italic" style={{color:'var(--primary-40)'}}>Messen</span> und trainieren.<br/>
+              Zusammen.
             </h2>
             <CoralRule/>
-            <div className="label-line" style={{color:'rgba(255,255,255,0.55)', textAlign:'center'}}>In neunzig Minuten · Soulhouse Hamburg + Berlin</div>
+            <div className="label-line" style={{color:'rgba(255,255,255,0.55)', textAlign:'center'}}>Über neun Wochen · Soulhouse Hamburg</div>
           </div>
           <div style={{display:'flex', justifyContent:'center'}}>
-            <button className="cta-chip cta-chip--filled">Link in Bio antippen. Bewerben.</button>
+            <button className="cta-chip cta-chip--filled">Link in Bio antippen. Platz sichern.</button>
           </div>
         </div>
       </SlideShell>
@@ -700,16 +700,16 @@ const Carousel2 = () => {
         <div className="flex-col-between">
           <Lockup onDark/>
           <div style={{display:'flex', flexDirection:'column', gap:4, alignItems:'center'}}>
-            <div className="inverse-strip inverse-strip--muted">Das ist das Assessment.</div>
-            <div className="inverse-strip inverse-strip--accent">Das Training folgt danach.</div>
+            <div className="inverse-strip inverse-strip--muted">Gemessen am Anfang und am Ende.</div>
+            <div className="inverse-strip inverse-strip--accent">Trainiert über neun Wochen.</div>
           </div>
           <div className="flex-center" style={{flex:1, justifyContent:'center'}}>
             <h3 className="display display-md center-text" style={{maxWidth:240}}>
-              Die ersten fünfzig erhalten <span className="italic" style={{color:'var(--primary-40)'}}>bevorzugten Zugang</span> ins volle Trainingsprogramm.
+              Die ersten vierzig sichern sich einen <span className="italic" style={{color:'var(--primary-40)'}}>Platz</span> im Pilotprogramm.
             </h3>
           </div>
           <div style={{display:'flex', justifyContent:'center'}}>
-            <button className="cta-chip cta-chip--filled">Link in Bio antippen. Bewerben.</button>
+            <button className="cta-chip cta-chip--filled">Link in Bio antippen. Platz sichern.</button>
           </div>
         </div>
       </SlideShell>
@@ -721,16 +721,16 @@ const Carousel2 = () => {
 const Carousel3 = () => {
   const n = 6;
   return (
-    <CarouselRow tag="Karussell 3 · Angebot" title="Zwei Wochen. Zwei Städte. Fünfzig Plätze." slideCount={n}>
+    <CarouselRow tag="Karussell 3 · Angebot" title="Neun Wochen. Hamburg. Vierzig Plätze." slideCount={n}>
       {/* 3.1 Hook */}
       <SlideShell variant="paper" i={1} n={n}>
         <div className="flex-col-between">
           <div/>
           <div className="flex-center" style={{flex:1, justifyContent:'center'}}>
             <h2 className="display display-xl center-text" style={{lineHeight:1.0}}>
-              Zwei <span className="italic">Wochen.</span><br/>
-              Zwei <span className="italic">Städte.</span><br/>
-              Fünfzig <span className="italic" style={{color:'var(--accent)'}}>Plätze.</span>
+              Neun <span className="italic">Wochen.</span><br/>
+              Ein <span className="italic">Programm.</span><br/>
+              Vierzig <span className="italic" style={{color:'var(--accent)'}}>Plätze.</span>
             </h2>
             <CoralRule style={{marginTop:12}}/>
           </div>
@@ -744,28 +744,28 @@ const Carousel3 = () => {
           <div className="eyebrow center-text">Wo + wann</div>
           <div>
             <h3 className="display display-md center-text" style={{marginBottom:6}}>
-              <span className="italic">Soulhouse</span> Hamburg.<br/><span className="italic">Soulhouse</span> Berlin.
+              <span className="italic">Soulhouse</span> Hamburg.
             </h3>
             <GermanyMap/>
           </div>
-          <div className="label-line center-text">Mai – Juni 2026 · 25 Plätze pro Stadt</div>
+          <div className="label-line center-text">September – Dezember 2026 · 40 Plätze</div>
         </div>
       </SlideShell>
 
       {/* 3.3 What you get */}
       <SlideShell variant="paper" i={3} n={n}>
         <div className="flex-col-between">
-          <div className="eyebrow center-text">Was dir neunzig Minuten geben</div>
+          <div className="eyebrow center-text">Was im Programm enthalten ist</div>
           <div className="bullet-list">
-            <div className="bullet-row"><span className="bullet-dot"/>Fünf Biomarker — kardial, respiratorisch, elektrodermal, muskulär, präfrontal</div>
-            <div className="bullet-row"><span className="bullet-dot"/>Dein Default Resiliency Index, null bis hundert</div>
+            <div className="bullet-row"><span className="bullet-dot"/>Start- und End-Assessment, fünf Biomarker über vier Systeme</div>
+            <div className="bullet-row"><span className="bullet-dot"/>Dein Default Resiliency Index, messbar</div>
             <div className="bullet-row"><span className="bullet-dot"/>Dein benanntes Muster</div>
-            <div className="bullet-row"><span className="bullet-dot"/>Heimpraktiken passend zu deinem Muster</div>
-            <div className="bullet-row"><span className="bullet-dot"/>Soulhouse-Module, die deinem System am besten tun</div>
-            <div className="bullet-row"><span className="bullet-dot"/>Live-Durchgang, schriftlicher Bericht am nächsten Tag</div>
-            <div className="bullet-row"><span className="bullet-dot"/>Bevorzugter Zugang ins Trainingsprogramm</div>
+            <div className="bullet-row"><span className="bullet-dot"/>Wöchentliches HRV-Atemtraining, app-geführt</div>
+            <div className="bullet-row"><span className="bullet-dot"/>Wöchentliche Soulhouse-Treatments: Facework, Bodywork oder Stretch</div>
+            <div className="bullet-row"><span className="bullet-dot"/>Wöchentliches Gruppen-Coaching und ein persönlicher Report</div>
+            <div className="bullet-row"><span className="bullet-dot"/>App-Zugang über die neun Wochen</div>
           </div>
-          <div className="label-line center-text">Neunzig Minuten · vor Ort</div>
+          <div className="label-line center-text">Neun Wochen · Hamburg</div>
         </div>
       </SlideShell>
 
@@ -775,13 +775,12 @@ const Carousel3 = () => {
           <div className="eyebrow center-text">Pilotpreis</div>
           <div className="flex-center" style={{flex:1, justifyContent:'center'}}>
             <div className="price-block">
-              <span className="price-old">€220</span>
-              <span className="price-new">€149</span>
+              <span className="price-new">Preis folgt</span>
             </div>
             <CoralRule style={{marginTop:6}}/>
           </div>
           <div className="sub center-text italic" style={{maxWidth:240, margin:'0 auto'}}>
-            Nur für die ersten fünfzig. Preise steigen danach.
+            Wird gerade mit Soulhouse final abgestimmt.
           </div>
         </div>
       </SlideShell>
@@ -792,14 +791,14 @@ const Carousel3 = () => {
           <div className="eyebrow center-text">Warum jetzt</div>
           <div className="flex-center" style={{flex:1, justifyContent:'center', gap:14}}>
             <h3 className="display display-md center-text" style={{maxWidth:260}}>
-              Fünfzig Plätze. Dann <span className="italic">schließt</span> der Pilot.
+              Vierzig Plätze. Dann <span className="italic">schließt</span> der Pilot.
             </h3>
             <div className="fifty-grid" aria-hidden="true">
-              {Array.from({length:50}).map((_, i) => (
+              {Array.from({length:40}).map((_, i) => (
                 <span key={i} className={`dot-slot ${i < 8 ? 'taken' : ''}`}/>
               ))}
             </div>
-            <div className="label-line center-text">Danach steigen Preise · die ersten fünfzig erhalten bevorzugten Zugang ins Trainingsprogramm</div>
+            <div className="label-line center-text">Vierzig Plätze · danach öffnet die zweite Gruppe zum vollen Preis</div>
           </div>
           <div/>
         </div>
@@ -810,24 +809,11 @@ const Carousel3 = () => {
         <SlideCounter i={6} n={n}/>
         <div className="slide-inner" style={{padding:'18px 0 20px'}}>
           <div style={{padding:'0 14px'}}><Lockup onDark/></div>
-          <div className="split-dark" style={{flex:1, marginTop:10}}>
-            <div className="half">
-              <div className="eyebrow" style={{color:'var(--primary-40)'}}>Variante A · Bewerben</div>
-              <div>
-                <h4 className="display display-sm" style={{color:'#fff', marginBottom:6}}>Bewirb dich um einen von <span className="italic">fünfzig</span> Plätzen.</h4>
-                <div className="sub" style={{fontSize:10, color:'rgba(255,255,255,0.65)'}}>Zwei-Minuten-Formular. Bestätigt in achtundvierzig Stunden.</div>
-              </div>
-              <button className="cta-chip cta-chip--filled" style={{alignSelf:'flex-start'}}>Jetzt bewerben</button>
-            </div>
-            <div className="divider"/>
-            <div className="half">
-              <div className="eyebrow" style={{color:'var(--primary-40)'}}>Variante B · Warteliste</div>
-              <div>
-                <h4 className="display display-sm" style={{color:'#fff', marginBottom:6}}>Auf die <span className="italic">Warteliste.</span></h4>
-                <div className="sub" style={{fontSize:10, color:'rgba(255,255,255,0.65)'}}>Vierundzwanzig Stunden Vorzugszugang zum Buchungsstart.</div>
-              </div>
-              <button className="cta-chip cta-chip--outline" style={{alignSelf:'flex-start'}}>Warteliste beitreten</button>
-            </div>
+          <div className="flex-center" style={{flex:1, justifyContent:'center', marginTop:10, padding:'0 14px'}}>
+            <div className="eyebrow" style={{color:'var(--primary-40)'}}>Anmeldung</div>
+            <h4 className="display display-md center-text" style={{color:'#fff', margin:'8px 0 6px'}}>Sichere dir einen von <span className="italic">vierzig</span> Plätzen.</h4>
+            <div className="sub center-text" style={{fontSize:11, color:'rgba(255,255,255,0.65)', maxWidth:240}}>Kurzer Fragebogen, zwei Minuten. Wir melden uns innerhalb einer Woche.</div>
+            <button className="cta-chip cta-chip--filled" style={{marginTop:12}}>Platz sichern</button>
           </div>
         </div>
       </div>
@@ -847,7 +833,7 @@ const Carousel4 = () => {
           <div className="flex-center" style={{flex:1, justifyContent:'center'}}>
             <h2 className="display display-xl center-text">
               Zwei Fragen, die geklärt werden sollten,<br/>
-              <span className="italic" style={{color:'var(--accent)'}}>bevor du dich bewirbst.</span>
+              <span className="italic" style={{color:'var(--accent)'}}>bevor du dich anmeldest.</span>
             </h2>
             <CoralRule style={{marginTop:10}}/>
           </div>
@@ -872,14 +858,14 @@ const Carousel4 = () => {
       {/* 4.3 Q1 answer */}
       <SlideShell variant="paper" i={3} n={n}>
         <div className="flex-col-between">
-          <div className="eyebrow center-text">Wie bodywork den Zustand wirklich verschiebt</div>
+          <div className="eyebrow center-text">Aktiv und passiv, zusammen</div>
           <h3 className="display display-sm center-text">
-            Soulhouse berührt das <span className="italic">somatische</span> System.<br/>
-            So verschiebt sich das <span className="italic">autonome.</span>
+            Soulhouse beruhigt im <span className="italic">Moment.</span><br/>
+            Das HRV-Atemtraining trainiert die <span className="italic">Regulation.</span>
           </h3>
           <NSBranches/>
           <div className="sub center-text italic" style={{fontSize:10.5, maxWidth:270, margin:'0 auto'}}>
-            Das Assessment liest das autonome System direkt — damit die nächste Sitzung den Knopf trifft, der wirklich hakt.
+            Beides zusammen wirkt stärker als jede Hälfte für sich. Wer sich selbst regulieren kann, holt aus jeder Behandlung mehr heraus.
           </div>
         </div>
       </SlideShell>
@@ -927,11 +913,11 @@ const Carousel4 = () => {
             </h2>
             <CoralRule/>
             <div className="label-line" style={{color:'rgba(255,255,255,0.55)', textAlign:'center', maxWidth:240}}>
-              50 assessments · Hamburg + Berlin · Mai – Juni 2026
+              40 Plätze · Hamburg · September – Dezember 2026
             </div>
           </div>
           <div style={{display:'flex', justifyContent:'center'}}>
-            <button className="cta-chip cta-chip--filled">Link in Bio antippen. Bewerben.</button>
+            <button className="cta-chip cta-chip--filled">Link in Bio antippen. Platz sichern.</button>
           </div>
         </div>
       </SlideShell>
@@ -971,13 +957,13 @@ const App = () => (
     <header className="board-masthead">
       <div className="left">
         <div className="kicker">Soulhouse × The Default Resilient Method · Instagram Kampagne</div>
-        <h1>Fünf Karussells. <em>Ein Pilot.</em><br/>Fünfzig Assessments in Hamburg und Berlin.</h1>
+        <h1>Fünf Karussells. <em>Ein Pilot.</em><br/>Das 9-Wochen-Programm bei Soulhouse Hamburg.</h1>
       </div>
       <div className="meta">
         <b>@soulhouse.me</b><br/>
         4:5 · 1080 × 1350<br/>
-        Mai – Juni 2026<br/>
-        <b>€149</b> · 50 Plätze
+        September – Dezember 2026<br/>
+        <b>40</b> Plätze
       </div>
     </header>
     <Carousel0/>
