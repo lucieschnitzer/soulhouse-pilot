@@ -65,12 +65,12 @@ const PhaseArc = () => (
       <circle cx="260" cy="98" r="3" fill="#D3D3D3"/>
       {/* labels */}
       <g fontFamily="Manrope" fontWeight="700" fontSize="6.2" letterSpacing="1.4" fill="#515151" textAnchor="middle">
-        <text x="10" y="103">AUSLÖSER</text>
+        <text x="2" y="103" textAnchor="start">AUSLÖSER</text>
         <text x="75" y="20">GASPEDAL</text>
         <text x="75" y="27">STEIGT</text>
         <text x="140" y="10">HÖCHSTAKTIVIERUNG</text>
         <text x="200" y="46">BREMSE GREIFT</text>
-        <text x="258" y="108" fill="#A8A8A8">RÜCKKEHR ZUM DEFAULT</text>
+        <text x="278" y="108" fill="#A8A8A8" textAnchor="end">RÜCKKEHR ZUM DEFAULT</text>
       </g>
     </svg>
   </div>
@@ -346,14 +346,10 @@ const GermanyMap = () => (
                Q 45 100, 28 85 Z"
             fill="#EDEAE2" stroke="#CFC8BB" strokeWidth="1"/>
       {/* dots */}
-      <line x1="90" y1="55" x2="205" y2="70" stroke="#816040" strokeWidth="1.2" strokeLinecap="round" strokeDasharray="3 3"/>
       <circle cx="90" cy="55" r="5" fill="#816040"/>
-      <circle cx="205" cy="70" r="5" fill="#816040"/>
       <circle cx="90" cy="55" r="10" fill="none" stroke="#816040" strokeWidth="0.8" opacity="0.45"/>
-      <circle cx="205" cy="70" r="10" fill="none" stroke="#816040" strokeWidth="0.8" opacity="0.45"/>
       <g fontFamily="Manrope" fontWeight="700" fontSize="8" letterSpacing="1.6" fill="#252525">
         <text x="90" y="45" textAnchor="middle">HAMBURG</text>
-        <text x="205" y="60" textAnchor="middle">BERLIN</text>
       </g>
     </svg>
   </div>
@@ -437,7 +433,7 @@ const Carousel0 = () => {
           <div style={{padding:'14px 22px 22px', display:'flex', flexDirection:'column', gap:8}}>
             <div className="eyebrow">Warum diese Partnerschaft</div>
             <h3 className="display display-md" style={{fontStyle:'italic'}}>
-              Soulhouse hat den Raum für Nervensystem-Arbeit gebaut. Die Default Resilient Method bringt das aktive HRV-Atemtraining und die Messung hinzu.
+              Soulhouse hat den Raum für Nervensystem-Arbeit gebaut. Die Default Resilient Method bringt aktives Training und Messung hinzu.
             </h3>
           </div>
         </div>
