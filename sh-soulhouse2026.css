@@ -63,3 +63,9 @@
 
 /* Dark surfaces -> espresso */
 .sh-close, .sh-foot, .final, .surface-inverse { background: #100F0F; }
+
+/* Anmeldung CTA: single centered box (the Fragebogen column was removed) */
+.sh-dualcta { grid-template-columns: 1fr; max-width: 620px; }
+.sh-dualcta > .sh-dualcta-col:first-of-type { padding-right: 0; border-right: 0; }
+.sh--mobile .sh-dualcta > .sh-dualcta-col:first-of-type { border-bottom: 0; padding-bottom: 0; }
+.sh-dualcta-col { align-items: center; text-align: center; }
