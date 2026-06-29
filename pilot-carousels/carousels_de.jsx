@@ -590,7 +590,7 @@ const Carousel1 = () => {
           <Lockup onDark/>
           <div className="flex-center" style={{flex:1, justifyContent:'center'}}>
             <DRIRingEmpty/>
-            <h2 className="display display-lg center-text" style={{marginTop:14}}>
+            <h2 className="display display-md center-text" style={{marginTop:10}}>
               <span className="italic" style={{color:'var(--primary-40)'}}>Messen</span> und trainieren.<br/>
               Zusammen.
             </h2>

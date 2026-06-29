@@ -202,7 +202,7 @@
     text-transform: uppercase;
     color: var(--accent);
     text-align: center;
-    white-space: nowrap;
+    white-space: normal;
   }
 
   /* 48×4 coral rule */
@@ -390,8 +390,9 @@
   .meter .bar.coral .fill { background: var(--accent); }
   .meter .label {
     font-family: var(--font-sans);
-    font-size: 17px; font-weight: 600; letter-spacing: 0.14em;
+    font-size: 14px; font-weight: 600; letter-spacing: 0.04em;
     text-transform: uppercase; color: var(--fg-2); text-align: center;
+    overflow-wrap: anywhere;
   }
   .meter .bar.coral + .label { color: var(--fg-1); }
   .meter .signals {
